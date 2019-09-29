@@ -1,17 +1,5 @@
-import React from 'react';
+import React, { FunctionComponent as FC } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-
-interface Name {
-	name: string;
-}
-
-const ComponentsScreen: React.SFC<Name> = props => {
-	return (
-		<View style={styles.container}>
-			<Text style={styles.text}>Component Screen</Text>
-		</View>
-	);
-};
 
 const styles = StyleSheet.create({
 	container: {
@@ -25,5 +13,20 @@ const styles = StyleSheet.create({
 		color: '#666'
 	}
 });
+
+interface Name {
+	name: string;
+	age: number;
+}
+
+function ComponentsScreen(props: Name) {
+	return (
+		<View style={styles.container}>
+			<Text
+				style={styles.text}
+			>{`Hi my name is ${props.name} and I am ${props.age} years old`}</Text>
+		</View>
+	);
+}
 
 export default ComponentsScreen;
