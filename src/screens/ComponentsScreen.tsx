@@ -20,11 +20,12 @@ interface Name {
 }
 
 function ComponentsScreen(props: Name) {
+	const { name, age } = props;
 	return (
 		<View style={styles.container}>
 			<Text
 				style={styles.text}
-			>{`Hi my name is ${props.name} and I am ${props.age} years old`}</Text>
+			>{`Hi my name is ${name} and I am ${age} years old`}</Text>
 		</View>
 	);
 }
