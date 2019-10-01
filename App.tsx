@@ -11,7 +11,8 @@ const AppNavigator = createStackNavigator(
 		List: ListScreen
 	},
 	{
-		initialRouteName: 'List'
+		initialRouteName: 'Home',
+		headerMode: 'none'
 	}
 );
 
