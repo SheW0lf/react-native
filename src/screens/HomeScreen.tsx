@@ -21,7 +21,7 @@ interface Props {
 	styleContainer?: {};
 }
 
-export function HomeScreen() {
+function HomeScreen() {
 	return (
 		<View style={styles.container}>
 			<Repeat numTimes={50} styleContainer={styles.repeat}>
@@ -38,3 +38,5 @@ const Repeat: FC<Props> = ({ numTimes, styleContainer, children }) => {
 	}
 	return <View style={styleContainer}>{items}</View>;
 };
+
+export default HomeScreen;
