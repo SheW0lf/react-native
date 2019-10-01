@@ -16,7 +16,7 @@ build/
 xcuserdata
 *.xccheckout
 *.moved-aside
-DerivedData
+DerivedDataf
 *.hmap
 *.ipa
 *.xcuserstate
@@ -35,6 +35,10 @@ local.properties
 node_modules/
 npm-debug.log
 yarn-error.log
+
+# Expo
+#
+.expo/
 
 # BUCK
 buck-out/
